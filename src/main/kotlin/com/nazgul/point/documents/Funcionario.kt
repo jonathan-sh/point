@@ -9,6 +9,7 @@ data class Funcionario
 (
     val nome: String,
     val email: String? = null,
+    val senha: String? = null,
     val cpf: String? = null,
     val perfil: PerfilEnum,
     val empresaId: String,

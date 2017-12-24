@@ -12,6 +12,6 @@ data class Lancamento
     val tipo: TipoEnum,
     val funcionarioId: String,
     val descricao: String? = "",
-    val localozacao: String? = null,
+    val localizacao: String? = null,
     @Id val id: String? = null
 )

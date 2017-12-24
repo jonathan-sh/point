@@ -7,6 +7,5 @@ interface FuncionarioRepository : MongoRepository<Funcionario, String> {
 
     fun findByEmail(email: String): Funcionario
 
-    fun findByCpf(cpnf: String): Funcionario
-
+    fun findByCpf(cpf: String): Funcionario
 }

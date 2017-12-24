@@ -34,13 +34,13 @@ class EmpresaServiceImplTest {
 
     @Test
     fun testBuscarEmpresaPorCnpj() {
-        val empresa: Empresa? = empresaService?.busca(CNPJ)
+        val empresa: Empresa? = empresaService?.findByCnpj(CNPJ)
         Assert.assertNotNull(empresa)
     }
 
     @Test
     fun testSaveEmpresa(){
-        val empresa: Empresa? = empresaService?.salva(empresa())
+        val empresa: Empresa? = empresaService?.save(empresa())
         Assert.assertNotNull(empresa)
     }
 
